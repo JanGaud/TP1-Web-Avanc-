@@ -5,9 +5,9 @@ require_once 'config.php';
 
 $tp1 = new Crud(Config::class);
 
-$insert = $tp1->insert('client', $_POST);
+$insertLivre = $tp1->insertLivre('livre', $_POST);
 
-$insert;
+$insertLivre;
 
 
 

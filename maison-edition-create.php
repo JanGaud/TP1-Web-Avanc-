@@ -15,12 +15,18 @@
 <body>
     <main>
         <h2>Entrez le titre et l'édition du livre</h2>
-        <form action="livre-store.php" method="post">
-            <label>Nom 
-                <input type="text" name="titre">
-            </label>           
-             <label>Édition
-                <input type="number" min="0" max="" name="edition">
+        <form action="maison-edition-store.php" method="post">
+            <label>Nom de la maison d'édition
+                <input type="text" name="nom_maison_edition">
+            </label>
+            <label>Adresse de la maison d'édition
+                <input type="text" name="adresse">
+            </label>
+            <label>Téléphone
+                <input type="text" name="maison_edition_telephone">
+            </label>          
+             <label>Adresse courriel
+                <input type="email" name="maison_edition_courriel">
             </label>
             <input type="submit" value="Confirmer">
         </form>

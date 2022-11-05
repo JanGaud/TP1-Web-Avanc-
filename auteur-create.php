@@ -14,14 +14,11 @@
 </head>
 <body>
     <main>
-        <h2>Entrez le titre et l'édition du livre</h2>
-        <form action="livre-store.php" method="post">
-            <label>Nom 
-                <input type="text" name="titre">
+        <h2>Entrez les informations sur l'auteur</h2>
+        <form action="auteur-store.php" method="post">
+            <label>Nom de l'auteur
+                <input type="text" name="nom_auteur">
             </label>           
-             <label>Édition
-                <input type="number" min="0" max="" name="edition">
-            </label>
             <input type="submit" value="Confirmer">
         </form>
 

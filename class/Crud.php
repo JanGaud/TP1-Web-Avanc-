@@ -28,8 +28,8 @@
                 header("location: $url");
             }
         }
-        
-
+     
+//-----------------------------------Client---------------------------------------------//
         public function insert($table, $data){
             $nomChamp = implode(", ",array_keys($data));
             $valeurChamp = ":".implode(", :", array_keys($data));
@@ -98,6 +98,41 @@
                 return $this->lastInsertId();
             }
         }
+
+//-----------------------------------Maison d'edition---------------------------------------------//
+        public function insertMaison($table, $data){
+            $nomChamp = implode(", ",array_keys($data));
+            $valeurChamp = ":".implode(", :", array_keys($data));
+
+            $sql = "INSERT INTO $table ($nomChamp) VALUES ($valeurChamp)";
+            
+            $stmt = $this->prepare($sql);
+            foreach($data as $key=>$value){
+                $stmt->bindValue(":$key", $value);
+            } 
+            if(!$stmt->execute()){
+                print_r($stmt->errorInfo());
+            }else{
+                return $this->lastInsertId();
+            }
+        }
+//-----------------------------------Auteur---------------------------------------------//
+public function insertAuteur($table, $data){
+    $nomChamp = implode(", ",array_keys($data));
+    $valeurChamp = ":".implode(", :", array_keys($data));
+
+    $sql = "INSERT INTO $table ($nomChamp) VALUES ($valeurChamp)";
+    
+    $stmt = $this->prepare($sql);
+    foreach($data as $key=>$value){
+        $stmt->bindValue(":$key", $value);
+    } 
+    if(!$stmt->execute()){
+        print_r($stmt->errorInfo());
+    }else{
+        return $this->lastInsertId();
+    }
+}
     }
 
 
