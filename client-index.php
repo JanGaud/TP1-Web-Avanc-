@@ -15,6 +15,8 @@ $client = $tp1->select("client", "nom_client", "DESC");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<?= include "assets/menu.php"; ?>
 <body>
     <main>
         <h1>Liste de client</h1>

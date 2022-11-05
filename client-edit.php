@@ -28,6 +28,7 @@ if(isset($_GET['id'])){
     </style>
 </head>
 <body>
+    <?= include "assets/menu.php"; ?>
 <main>
     <h2>Modifier</h2>
         <form action="client-update.php" method="post">

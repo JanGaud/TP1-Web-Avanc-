@@ -13,6 +13,7 @@
 
 </head>
 <body>
+    <?= include "assets/menu.php"; ?>
     <main>
         <h2>Entrez le titre et l'édition du livre</h2>
         <form action="maison-edition-store.php" method="post">

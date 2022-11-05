@@ -14,13 +14,15 @@
 </head>
 <body>
     <main>
-        <h2>Entrez les informations sur l'auteur</h2>
-        <form action="auteur-store.php" method="post">
-            <label>Nom de l'auteur
-                <input type="text" name="nom_auteur">
-            </label>           
-            <input type="submit" value="Confirmer">
-        </form>
+        <div class="form">
+            <h2>Entrez les informations sur l'auteur</h2>
+            <form action="auteur-store.php" method="post">
+                <label>Nom de l'auteur
+                    <input type="text" name="nom_auteur">
+                </label>           
+                <input type="submit" value="Confirmer">
+            </form>
+        </div>
 
     </main>
 </body>

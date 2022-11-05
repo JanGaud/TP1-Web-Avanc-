@@ -13,27 +13,31 @@
 
 </head>
 <body>
-    <main>
-        <h2>Entrez vos informations</h2>
-        <form action="client-store.php" method="post">
-            <label>Nom 
-                <input type="text" name="nom_client">
-            </label>           
-             <label>Téléphone
-                <input type="text" name="telephone">
-            </label>
-            <label>Adresse
-                <input type="text" name="adresse">
-            </label>
-            <label>Anniversaire
-                <input type="date" name="date_de_naissance">
-            </label>
-            <label>Courriel
-                <input type="email" name="client_courriel">
-            </label>
 
-            <input type="submit" value="Confirmer">
-        </form>
+    <?= include "assets/menu.php"; ?>
+    <main>
+        <div class="form">
+            <h2>Entrez vos informations</h2>
+            <form action="client-store.php" method="post">
+                <label>Nom 
+                    <input type="text" name="nom_client">
+                </label>           
+                <label>Téléphone
+                    <input type="text" name="telephone">
+                </label>
+                <label>Adresse
+                    <input type="text" name="adresse">
+                </label>
+                <label>Anniversaire
+                    <input type="date" name="date_de_naissance">
+                </label>
+                <label>Courriel
+                    <input type="email" name="client_courriel">
+                </label>
+
+                <input type="submit" value="Confirmer">
+            </form>
+        </div>
 
     </main>
 </body>
