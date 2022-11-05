@@ -13,6 +13,7 @@
 
 </head>
 <body>
+    <?= include "assets/menu.php"; ?>
     <main>
         <div class="form">
             <h2>Entrez les informations sur l'auteur</h2>

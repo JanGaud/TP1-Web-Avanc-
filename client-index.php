@@ -19,32 +19,34 @@ $client = $tp1->select("client", "nom_client", "DESC");
 <?= include "assets/menu.php"; ?>
 <body>
     <main>
-        <h1>Liste de client</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nom</th>
-                    <th>Adresse</th>
-                    <th>telephone</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                    foreach($client as $row){
-                ?>
+        <section class="liste">
+            <h3>Liste de client</h3>
+            <table>
+                <thead>
                     <tr>
-                        <td><a href="client-show.php?id=<?php echo $row['idClient'] ?>">
-                                <?php echo $row['nom_client'] ?>
-                            </a>
-                        </td>
-                        <td><?php echo $row['adresse'] ?></td>
-                        <td><?php echo $row['telephone'] ?></td>
+                        <th>Nom</th>
+                        <th>Adresse</th>
+                        <th>telephone</th>
                     </tr>
-                <?php       
-                    }
-                ?>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <?php
+                        foreach($client as $row){
+                    ?>
+                        <tr>
+                            <td><a href="client-show.php?id=<?php echo $row['idClient'] ?>">
+                                    <?php echo $row['nom_client'] ?>
+                                </a>
+                            </td>
+                            <td><?php echo $row['adresse'] ?></td>
+                            <td><?php echo $row['telephone'] ?></td>
+                        </tr>
+                    <?php       
+                        }
+                    ?>
+                </tbody>
+            </table>
+        </section>
     </main>
 </body>
 </html>

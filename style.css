@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+}
+
+/*-----------------------------------------------formulaires-------------------------------------------------------------*/
+.form{
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 300px;
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(43, 43, 43, 0.767);
+    color: whitesmoke;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*------------------------------------------------Info-------------------------------------------------------*/
+
+.info{
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 300px;
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(43, 43, 43, 0.767);
+}
+
+.info>p{
+    color: white;
+   line-height: 3; 
+}
+
+.info a{
+    text-decoration: none;
+    color: red;
+}
+
+.info a:hover{
+    text-decoration: underline;
+    color: #5a0505;
+    transition: 0.5s;
+}
+
+.info>h3{
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*------------------------------------------------Enregistrer-------------------------------------------------------*/
+
+.enregistrer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logoContainer{
+    width: 500px;
+    object-fit: contain;
+}
+
+.logoContainer>img{
+    width: 100%;
+}
+
+/*--------------------------------------------Liste----------------------------------------*/
+
+.liste{
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: fit-content;
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(43, 43, 43, 0.767);
+    
+}
+
+.liste>h3{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.liste tr{
+    color: white;
+    line-height: 2;
+}
+
+.liste a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.liste a:hover{
+    color: #5a0505;
+    text-decoration: underline;
+    transition: 0.5s;
+}

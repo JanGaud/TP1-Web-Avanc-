@@ -77,7 +77,7 @@
         <div class="dropdown">
             <button class="dropbtn">Maison édition</button>
             <div class="dropdown-content">
-                <a href="#">Ajout</a>
+                <a href="http://localhost/TP-web_avancee/maison-edition-create.php">Ajout</a>
                 <a href="#">Modification</a>
             </div>
         </div>

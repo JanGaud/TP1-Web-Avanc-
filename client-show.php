@@ -19,7 +19,7 @@ if(isset($_GET['id'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -27,7 +27,7 @@ if(isset($_GET['id'])){
     <main>
 
     <div class="info">
-        <p><strong>Nom :</strong><?php echo $nom_client; ?></p>
+        <h3><?php echo $nom_client; ?></h3>
         <p><strong>Adresse :</strong><?php echo $telephone; ?></p>
         <p><strong>Postal Code :</strong><?php echo $adresse; ?></p>
         <p><strong>Anniversaire : </strong><?php echo $date_de_naissance; ?></p>

@@ -15,7 +15,8 @@
 <body>
     <?= include "assets/menu.php"; ?>
     <main>
-        <h2>Entrez le titre et l'édition du livre</h2>
+    <div class="form">
+        <h2>Entrez les informations de la maison d'édition</h2>
         <form action="maison-edition-store.php" method="post">
             <label>Nom de la maison d'édition
                 <input type="text" name="nom_maison_edition">
@@ -31,7 +32,7 @@
             </label>
             <input type="submit" value="Confirmer">
         </form>
-
+    </div>
     </main>
 </body>
 </html>

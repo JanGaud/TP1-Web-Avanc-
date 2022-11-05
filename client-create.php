@@ -17,7 +17,7 @@
     <?= include "assets/menu.php"; ?>
     <main>
         <div class="form">
-            <h2>Entrez vos informations</h2>
+            <h2>Entrez les informations du client</h2>
             <form action="client-store.php" method="post">
                 <label>Nom 
                     <input type="text" name="nom_client">
