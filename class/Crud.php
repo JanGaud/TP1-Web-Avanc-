@@ -116,24 +116,34 @@
                 return $this->lastInsertId();
             }
         }
-//-----------------------------------Auteur---------------------------------------------//
-public function insertAuteur($table, $data){
-    $nomChamp = implode(", ",array_keys($data));
-    $valeurChamp = ":".implode(", :", array_keys($data));
 
-    $sql = "INSERT INTO $table ($nomChamp) VALUES ($valeurChamp)";
-    
-    $stmt = $this->prepare($sql);
-    foreach($data as $key=>$value){
-        $stmt->bindValue(":$key", $value);
-    } 
-    if(!$stmt->execute()){
-        print_r($stmt->errorInfo());
-    }else{
-        return $this->lastInsertId();
+        public function getMaisonsEdition(){
+            return $this->select("maison_edition", "idMaison_edition");
+        }
+
+
+//-----------------------------------Auteur---------------------------------------------//
+    public function insertAuteur($table, $data){
+        $nomChamp = implode(", ",array_keys($data));
+        $valeurChamp = ":".implode(", :", array_keys($data));
+
+        $sql = "INSERT INTO $table ($nomChamp) VALUES ($valeurChamp)";
+        
+        $stmt = $this->prepare($sql);
+        foreach($data as $key=>$value){
+            $stmt->bindValue(":$key", $value);
+        } 
+        if(!$stmt->execute()){
+            print_r($stmt->errorInfo());
+        }else{
+            return $this->lastInsertId();
+        }
+    }
+
+    public function getAuteurs(){
+        return $this->select("auteur", "idAuteur");
     }
 }
-    }
 
 
 ?>

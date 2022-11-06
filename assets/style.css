@@ -7,13 +7,26 @@ body{
     margin-top: 20px;
     margin-left: 30%;
     margin-right: 30%;
-    width: 300px;
-    display: block;
+    min-width: 300px;
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: rgba(43, 43, 43, 0.767);
     color: whitesmoke;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form>label{
+    display: flex;
+    justify-content: space-between;
+}
+
+form>input, label{
+    margin-top: 10px;
 }
 
 h2{

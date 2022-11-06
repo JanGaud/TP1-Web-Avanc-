@@ -9,6 +9,7 @@
     <?php
         include_once "class/Crud.php";
         include_once "config.php";
+        $crud = new Crud(Config::class);
     ?>
 
 </head>
@@ -20,8 +21,26 @@
         <form action="livre-store.php" method="post">
             <label>Nom 
                 <input type="text" name="titre">
-            </label>           
-             <label>Édition
+            </label>
+            <label>Auteur
+                <select name="Auteur_idAuteur" id="">
+                    <?php
+                        foreach($crud->getAuteurs() as $auteur){
+                            echo "<option value =". $auteur['idAuteur'] ."> " . $auteur['nom_auteur'] . "</option>";
+                        }
+                    ?>
+                </select>
+            </label>         
+            <label>Maison d'édition
+                <select name="Maison_edition_idMaison_edition" id="">
+                    <?php
+                        foreach($crud->getMaisonsEdition() as $maisonEdition){
+                            echo "<option value =". $maisonEdition['idMaison_edition'] ."> " . $maisonEdition['nom_maison_edition'] . "</option>";
+                        }
+                    ?>
+                </select>
+            </label>
+            <label>Édition
                 <input type="number" min="0" max="" name="edition">
             </label>
             <input type="submit" value="Confirmer">

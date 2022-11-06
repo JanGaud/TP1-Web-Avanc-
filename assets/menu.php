@@ -1,6 +1,3 @@
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
     <style>
     body{
         margin: 0;
@@ -57,7 +54,7 @@
             <button class="dropbtn">Clients</button>
             <div class="dropdown-content">
                 <a href="http://localhost/TP-web_avancee/client-create.php">Ajout</a>
-                <a href="http://localhost/TP-web_avancee/client-index.php">Modification</a>
+                <a href="http://localhost/TP-web_avancee/index.php">Modification</a>
             </div>
         </div>
         <div class="dropdown">
