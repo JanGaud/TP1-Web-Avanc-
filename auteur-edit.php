@@ -1,10 +1,10 @@
 <?php
-require_once 'config.php';
+
 
 if(isset($_GET['id'])){
     $id = $_GET['id'];
     require_once "class/Crud.php";
-    $tp1 = new Crud(Config::class);
+    $tp1 = new Crud;
     $auteur = $tp1->selectIdAuteur('auteur', $id);
     extract($auteur);
 }else{

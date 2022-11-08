@@ -8,7 +8,6 @@
     <title>Créer un compte</title>
     <?php
         include_once "class/Crud.php";
-        include_once "config.php";
     ?>
 
 </head>

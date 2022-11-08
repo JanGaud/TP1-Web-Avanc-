@@ -8,8 +8,7 @@
     <title>Créer un compte</title>
     <?php
         include_once "class/Crud.php";
-        include_once "config.php";
-        $crud = new Crud(Config::class);
+        $crud = new Crud;
     ?>
 
 </head>

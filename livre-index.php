@@ -1,8 +1,7 @@
 <?php
 require_once "class/Crud.php";
-require_once "config.php";
 
-$tp1 = new Crud(Config::class);
+$tp1 = new Crud;
 
 $livre = $tp1->select("livre", "idLivre", "DESC");
 ?>

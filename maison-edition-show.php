@@ -1,10 +1,9 @@
 <?php
-require_once 'config.php';
 
 if(isset($_GET['id'])){
     $id = $_GET['id'];
     require_once "class/Crud.php";
-    $tp1 = new Crud(Config::class);
+    $tp1 = new Crud;
     $maison = $tp1->selectIdMaison('maison_edition', $id);
     extract($maison);
 }else{
