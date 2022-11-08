@@ -1,15 +1,10 @@
 <?php
-require_once 'config.php';
+require_once "class/Crud.php";
+require_once "config.php";
 
-if(isset($_GET['id'])){
-    $id = $_GET['id'];
-    require_once "class/Crud.php";
-    $tp1 = new Crud(Config::class);
-    $auteur = $tp1->selectIdauteur('auteur', $id);
-    extract($auteur);
-}else{
-    header('Location: index.php');
-}
+$tp1 = new Crud(Config::class);
+
+$auteur = $tp1->select("auteur", "nom_auteur", "DESC");
 ?>
 
 <!DOCTYPE html>
@@ -26,14 +21,21 @@ if(isset($_GET['id'])){
 <body>
     <main>
         <section class="liste">
-            <h3>Liste d'auteurs</h3>
+            <h3>Liste des auteurs</h3>
             <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <?php
                         foreach($auteur as $row){
                     ?>
                         <tr>
-                            <td><a href="auteur-show.php?id=<?php echo $row['idAuteur'] ?>"></a>
+                            <td><a href="auteur-show.php?id=<?php echo $row['idAuteur'] ?>">
+                                    <?php echo $row['nom_auteur'] ?>
+                                </a>
                             </td>
                         </tr>
                     <?php       

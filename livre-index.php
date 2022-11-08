@@ -31,10 +31,10 @@ $livre = $tp1->select("livre", "idLivre", "DESC");
                 </thead>
                 <tbody>
                     <?php
-                        foreach($client as $row){
+                        foreach($livre as $row){
                     ?>
                         <tr>
-                            <td><a href="livre-show.php?id=<?php echo $row['idClient'] ?>">
+                            <td><a href="livre-show.php?id=<?php echo $row['idLivre'] ?>">
                                     <?php echo $row['titre'] ?>
                                 </a>
                             </td>

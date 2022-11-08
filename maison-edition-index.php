@@ -4,7 +4,7 @@ require_once "config.php";
 
 $tp1 = new Crud(Config::class);
 
-$maison = $tp1->selectIdMaison("maison_edition", "idMaison_edition", "DESC");
+$maison = $tp1->select("maison_edition", "idMaison_edition", "DESC");
 ?>
 
 <!DOCTYPE html>
@@ -36,9 +36,11 @@ $maison = $tp1->selectIdMaison("maison_edition", "idMaison_edition", "DESC");
                     ?>
                         <tr>
                             <td><a href="maison-edition-show.php?id=<?php echo $row['idMaison_edition'] ?>">
-                                    <?php echo $row['titre'] ?>
+                                    <?php echo $row['nom_maison_edition'] ?>
                                 </a>
                             </td>
+                            <td><?php echo $row['maison_edition_telephone'] ?></td>
+                            <td><?php echo $row['maison_edition_courriel'] ?></td>
                         </tr>
                     <?php       
                         }
