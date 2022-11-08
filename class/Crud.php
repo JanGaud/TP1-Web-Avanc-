@@ -2,13 +2,9 @@
 
     class Crud extends PDO {
 
-        public function __construct($config){
-            parent::__construct('mysql:host=' . $config::HOST 
-                            . '; dbname=' . $config::DATABASE 
-                            . '; port=' . $config::PORT 
-                            . '; charset=utf8', $config::USERNAME, '');
+        public function __construct(){
+            parent::__construct('mysql:host=localhost; dbname=e2194798; port=3306; charset=utf8', '7tbGLCR30GjRQwljrmti', 'e2194798');
         }
-
         
         public function select($table, $field='id', $order='ASC' ){
             $sql = "SELECT * FROM $table ORDER BY $field $order";
