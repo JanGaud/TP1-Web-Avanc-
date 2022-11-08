@@ -5,7 +5,7 @@ if(isset($_GET['id'])){
     $id = $_GET['id'];
     require_once "class/Crud.php";
     $tp1 = new Crud(Config::class);
-    $client = $tp1->selectId('client', $id);
+    $client = $tp1->select('client', $id);
     extract($client);
 }else{
     header('Location: client-index.php');
