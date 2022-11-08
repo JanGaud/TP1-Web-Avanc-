@@ -61,21 +61,21 @@
             <button class="dropbtn">Livres</button>
             <div class="dropdown-content">
                 <a href="http://localhost/TP-web_avancee/livre-create.php">Ajout</a>
-                <a href="#">Modification</a>
+                <a href="http://localhost/TP-web_avancee/livre-show.php">Modification</a>
             </div>
         </div>
         <div class="dropdown">
             <button class="dropbtn">Auteurs</button>
             <div class="dropdown-content">
                 <a href="http://localhost/TP-web_avancee/auteur-create.php">Ajout</a>
-                <a href="#">Modification</a>
+                <a href="http://localhost/TP-web_avancee/auteur-show.php">Modification</a>
             </div>
         </div>
         <div class="dropdown">
             <button class="dropbtn">Maison édition</button>
             <div class="dropdown-content">
                 <a href="http://localhost/TP-web_avancee/maison-edition-create.php">Ajout</a>
-                <a href="#">Modification</a>
+                <a href="http://localhost/TP-web_avancee/maison-edition-show.php">Modification</a>
             </div>
         </div>
     </header>

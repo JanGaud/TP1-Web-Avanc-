@@ -5,8 +5,8 @@ if(isset($_GET['id'])){
     $id = $_GET['id'];
     require_once "class/Crud.php";
     $tp1 = new Crud(Config::class);
-    $client = $tp1->selectId('client', $id);
-    extract($client);
+    $auteur = $tp1->selectIdAuteur('auteur', $id);
+    extract($auteur);
 }else{
     header('Location: index.php');
 }
@@ -28,12 +28,8 @@ if(isset($_GET['id'])){
     <main>
 
     <div class="info">
-        <h3><?php echo $nom_client; ?></h3>
-        <p><strong>Adresse :</strong><?php echo $telephone; ?></p>
-        <p><strong>Postal Code :</strong><?php echo $adresse; ?></p>
-        <p><strong>Anniversaire : </strong><?php echo $date_de_naissance; ?></p>
-        <p><strong>Courriel : </strong><?php echo $client_courriel; ?></p>
-        <p><a href="client-edit.php?id=<?php echo $id; ?>">Modifier</a></p>
+        <h3><?php echo $nom_auteur; ?></h3>
+        <p><a href="auteur-edit.php?id=<?php echo $id; ?>">Modifier</a></p>
     </div>
     </main>
 </body>

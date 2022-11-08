@@ -17,7 +17,7 @@
     <?= include "assets/menu.php"; ?>
     <main>
     <div class="form">
-        <h2>Entrez le titre et l'édition du livre</h2>
+        <h2>Entrez les informations du livre</h2>
         <form action="livre-store.php" method="post">
             <label>Nom 
                 <input type="text" name="titre">
